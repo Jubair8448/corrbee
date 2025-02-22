@@ -1,0 +1,144 @@
+/* Styling for the review box */
+.reviewBox {
+  background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+  width: 450px;
+  margin: 40px auto;
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  animation: fadeIn 0.8s ease-in-out; /* Smooth animation */
+  box-sizing: border-box;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the form container */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header styling */
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Star rating styling */
+.starRating {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Styling for the stars */
+.star {
+  font-size: 60px; /* Increase the base size of the stars */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the stars */
+.star:hover {
+  transform: scale(1.4); /* Slightly enlarge stars on hover */
+  filter: brightness(1.2); /* Brighten the star */
+}
+
+/* Active (clicked) star animation */
+.star.falling {
+  animation: starFall 0.4s ease forwards;
+}
+
+/* Falling animation for clicked stars */
+@keyframes starFall {
+  0% {
+    transform: scale(1.4) translateY(0); /* Start at larger size */
+  }
+  50% {
+    transform: scale(1) translateY(15px); /* Fall down slightly */
+  }
+  100% {
+    transform: scale(1) translateY(0); /* Return to normal size */
+  }
+}
+
+/* Styling for the comment textarea */
+textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+textarea:focus {
+  border-color: #ff6347; /* Highlight border on focus */
+  outline: none;
+}
+
+/* Submit button styling */
+button {
+  background-color: purple; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: purple; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Success message */
+.successMessage {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Error message */
+.errorMessage {
+  color: purple;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Animation for success/error messages */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

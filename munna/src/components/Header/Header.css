@@ -1,0 +1,118 @@
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+  }
+  
+  @media (max-width: 768px) {
+    .header-search {
+      width: 100%;
+    }
+  
+    .newsizeinput {
+      font-size: 10px;
+    }
+  
+    .newfontsize {
+      font-size: 10px;
+    }
+  
+    .serachlisting {
+      width: 100%;
+    }
+  
+    .imagecontain {
+      width: 25%;
+    }
+  
+    .cartinfo h6 {
+      font-size: 9px;
+    }
+  
+    .cartinfo p {
+      font-size: 8px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .header-search {
+      display: none; /* Hide the search bar by default */
+      width: 70%; /* Smaller width */
+      margin: 0 auto; /* Center the search bar */
+      padding: 0 5px; /* Add equal padding on left and right */
+    }
+  
+    .header-search.active {
+      display: flex; /* Show the search bar when active */
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      background-color: rgb(86, 6, 6);
+      z-index: 1000;
+      width: 80%; /* Adjust width to ensure it is not too small */
+    }
+  
+    .search-icon {
+      display: block; /* Show the search icon */
+      cursor: pointer;
+    }
+  
+    .newsizeinput {
+      font-size: 4px; /* Smaller font size */
+    }
+  
+    .newfontsize {
+      font-size: 4px; /* Smaller font size */
+    }
+  
+    .serachlisting {
+      width: 100%;
+    }
+  
+    .imagecontain {
+      width: 8%; /* Smaller image container */
+    }
+  
+    .cartinfo h6 {
+      font-size: 4px; /* Smaller font size */
+    }
+  
+    .cartinfo p {
+      font-size: 3px; /* Smaller font size */
+    }
+  
+    .serachlisting li {
+      display: flex;
+      align-items: center;
+      padding: 2px 0; /* Adjust padding as needed */
+    }
+  
+    .serachlisting .imagecontain {
+      flex: 0 0 12%; /* Adjust width as needed */
+    }
+  
+    .serachlisting .cartinfo {
+      flex: 1;
+      padding-left: 3px; /* Adjust padding as needed */
+    }
+  
+    .close-searchbar {
+      font-size: 18px;
+      cursor: pointer;
+      margin-left: 5px;
+      display: block; /* Show the close icon on mobile */
+    }
+  }
+  
+  @media (min-width: 481px) {
+    .search-icon {
+      display: none !important; /* Hide the search icon on desktop */
+    }
+  
+    .close-searchbar {
+      display: none !important; /* Hide the close icon on desktop */
+    }
+  }
