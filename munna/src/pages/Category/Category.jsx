@@ -1310,6 +1310,24 @@ useEffect(()=>{
                 </div>
               </div>
             </div>
+            <div
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <video
+                                  style={{maxWidth: "100%",height: "auto", borderRadius: "30px",}}autoPlay muted // Modern browsers ke liye autoplay ke saath muted hona zaruri hai
+loop playsInline // Mobile devices ke liye autoplay support karta hai
+>
+  <source src="/videos/romantic-video27.mp4" // Public folder ka video path
+    type="video/mp4"/>
+ Your browser does not support the video tag.
+</video>
+
+                                </div>
           </div>
         </div>
       </section>
