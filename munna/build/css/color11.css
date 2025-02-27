@@ -1726,15 +1726,19 @@
             }
             
             .brand-second .brand-box {
-              background-color: #ffffff;
+              
               padding: 30px;
               margin-right: 8px;
               margin-left: 8px;
+              border-radius: 50%;
             }
             
             .brand-second .brand-box img {
               margin-left: auto;
               margin-right: auto;
+              border-radius: 50%;
+              background-color: purple;
+              padding: 5px;
             }
             
             /*===========================
@@ -12000,21 +12004,20 @@
              background-color: white;
               /* background-color: #f9f9f9; */
               padding: 10px 0;
+              
             }
             
             .breadcrumb-main .breadcrumb-contain {
-              display: -webkit-box;
-              display: -ms-flexbox;
               display: flex;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
               justify-content: flex-start;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
               align-items: center;
               text-align: center;
-              
+              margin: 10px;
+              padding: 15px;
+              border-radius: 8px;
+              background: linear-gradient(55deg, purple, yellow, purple); /* Gradient Background */
             }
+            
             
             .breadcrumb-main .breadcrumb-contain h2 {
               color: #333333;
